@@ -2,9 +2,23 @@ import re
 import os
 from rmdoc import *
 
-def php_requests(file_name,var_name='false',line_num = 0):
+path = '' 
+def php_requests(file_name,var_name='false',line_num = 0,flag=0):
+	
+	if flag != 0:
+		print 'Enter main path:'
+		global path
+		path = raw_input()
+		
+
+	#simple-support-ticket-system
+	if path not in file_name:
+		file_name =  path + file_name
+
+	 
+
 	doc_command = 0
-	if var_name == 'false':
+	if var_name == 'false' and '_tmp' not in file_name :
 		php_rmdoc(file_name)
 
 		for line in open(file_name+'_tmp') :
