@@ -2,13 +2,14 @@
 Find vulnerability (sql injection) in php source code.
 
 ### How to use it ?
- Fist extract zip file (python) then paste php source code.
-#### File tree
-- staticsqlmap
-  - main.py
-  - requests.py
-  - rmdoc.py
-  - index.php (Your php main source code)
-  - ...... (Other files and folders)
+ Fist extract zip file then enter following code in terminal.
+ 
 
 `python main.py`
+
+
+`Enter main file name:`
+index.php
+
+`Enter main path:`
+test/
